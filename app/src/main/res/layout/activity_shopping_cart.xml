@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/in_title"
+        layout="@layout/title_layout"/>
+
+    <ListView
+        android:layout_below="@id/in_title"
+        android:id="@+id/lv_shopping_cart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:layout_marginLeft="10dip"
+        android:dividerHeight="0.5dp"
+        android:scrollbars="none"
+        android:layout_marginBottom="50dp"
+        />
+    <LinearLayout
+
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <RelativeLayout
+            android:id="@+id/rl_all_check"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="17dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="23dp"
+
+                android:id="@+id/iv_quanxuan"
+                android:layout_marginRight="6dp"
+                android:src="@mipmap/weixianzhong_icon_normal_"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_marginTop="17dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_quanxuan"
+                android:text="全选"
+                android:textSize="15sp"
+                android:textColor="@color/text_color_back"
+                android:id="@+id/tv_quanxuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <FrameLayout
+                android:layout_alignParentRight="true"
+
+                android:background="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="17dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:id="@+id/iv_gouwuche"
+                android:layout_marginRight="6dp"
+                android:text="合计："
+                android:textSize="12sp"
+                android:textColor="@color/text_color_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="17dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_gouwuche"
+                android:text="￥0"
+                android:id="@+id/tv_total_price"
+                android:textSize="12sp"
+                android:textColor="#eb6a89"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_to_pay"
+            android:background="@color/pink_word_home"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="去结算"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

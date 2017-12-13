@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="142dp">
+        <ImageView
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="6dp"
+            android:id="@+id/iv_check"
+            android:src="@mipmap/weixianzhong_icon_normal_"
+            android:layout_centerVertical="true"
+            android:layout_width="22dp"
+            android:layout_height="22dp" />
+        <ImageView
+            android:id="@+id/iv_product"
+            android:layout_toRightOf="@id/iv_check"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/tupian_pl_iocn_normal_"
+            android:layout_width="wrap_content"
+            android:layout_height="112dp" />
+        <TextView
+            android:id="@+id/tv_product"
+            android:text="防晒服"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/iv_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="删除"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="12dp"
+            android:textSize="15sp"
+            android:id="@+id/tv_delete"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/pink_word_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+         <TextView
+             android:layout_below="@id/tv_product"
+            android:id="@+id/tv_price"
+            android:text="现价："
+            android:textSize="14sp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/iv_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/pink_word_home"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/tv_product"
+            android:layout_toRightOf="@id/tv_price"
+            android:text="￥123"
+            android:id="@+id/tv_price_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+      <ListView
+          android:layout_below="@id/tv_price"
+          android:divider="@null"
+          android:layout_toRightOf="@id/iv_product"
+          android:id="@+id/lv_all_type"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/iv_product"
+                android:layout_below="@id/lv_all_type"
+                android:id="@+id/ll_zengjian"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_product_jian"
+                    android:layout_margin="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/buy_product_jianhao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_margin="8dp"
+
+                    android:text="0"
+                    android:textSize="14sp"
+                    android:id="@+id/tv_check_num"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/iv_product_jia"
+                    android:layout_margin="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/buy_product_jiahao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_position"
+                    android:layout_width="0dip"
+                    android:layout_height="0dip" />
+
+            </LinearLayout>
+
+
+</RelativeLayout>
